@@ -1,4 +1,4 @@
-// Topuino and Topuino_Server must share this header file
+// Mapuino and Mapuino_Server must share this header file
 
 #define CPU_PERCENT "CPU_PERCENT"
 #define MEM_PERCENT "MEM_PERCENT"

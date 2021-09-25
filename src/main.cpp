@@ -36,5 +36,5 @@ void loop()
     if (netClient->FetchNewData() != OK) {
         return;
     }
-    displayPanel->DisplayLedMap(netClient->GetData0(), netClient->GetData1());
+    displayPanel->DisplayLedMap(netClient->GetSeg0(), netClient->GetSeg1());
 }

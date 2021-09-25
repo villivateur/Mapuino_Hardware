@@ -15,6 +15,6 @@ private:
 public:
     ClientNetwork();
     STATUS FetchNewData();
-    uint32_t GetData0();
-    uint32_t GetData1();
+    uint32_t GetSeg0();
+    uint32_t GetSeg1();
 };

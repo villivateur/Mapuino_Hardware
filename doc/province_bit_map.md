@@ -21,4 +21,4 @@
 | 广东 | data0 | 28 | 福建 | data0 | 29 |
 | 海南 | data0 | 30 | 澳门 | data0 | 31 |
 | 香港 | data1 | 0 | 台湾 | data1 | 1 |
-| World | data1 | 2 |
+| World | data1 | 2 | - | - | - |

@@ -42,20 +42,20 @@ STATUS ClientNetwork::FetchNewData()
     return status;
 }
 
-uint32_t ClientNetwork::GetData0()
+uint32_t ClientNetwork::GetSeg0()
 {
     if (status != OK) {
         return 0;
     } else {
-        return (uint32_t)receivedData["DATA0"];
+        return (uint32_t)receivedData["SEG0"];
     }
 }
 
-uint32_t ClientNetwork::GetData1()
+uint32_t ClientNetwork::GetSeg1()
 {
     if (status != OK) {
         return 0;
     } else {
-        return (uint32_t)receivedData["DATA1"];
+        return (uint32_t)receivedData["SEG1"];
     }
 }

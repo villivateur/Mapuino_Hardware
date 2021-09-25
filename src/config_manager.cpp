@@ -2,7 +2,7 @@
 #include "status_blink.h"
 #include "user_data.h"
 
-#define SSID "Topuino"
+#define SSID "Mapuino"
 #define PASSWORD "vvzero.com"
 
 extern StatusBlink* statusLed;
@@ -13,12 +13,12 @@ static String configPage("\
 <!DOCTYPE html>\
 <html>\
 <head>\
-    <title>Topuino</title>\
+    <title>Mapuino</title>\
     <meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no' />\
     <link rel='shortcut icon' href='data:,'>\
 </head>\
 <body>\
-<h1 style='text-align: center; font-size: 40px'>Topuino Config Page</h1>\
+<h1 style='text-align: center; font-size: 40px'>Mapuino Config Page</h1>\
 <form action='/setup' method='POST'>\
     <div style='text-align: center'>\
         <div style='font-size: 20px; margin-bottom: 15px'>\
