@@ -31,10 +31,16 @@ void setup()
 
 void loop()
 {
+    static uint32_t tickCount = 0;
+
     delay(1000);
+    tickCount++;
     funcButton->Scan();
-    if (netClient->FetchNewData() != OK) {
-        return;
+
+    if (tickCount % 60 == 0) {
+        if (netClient->FetchNewData() != OK) {
+            return;
+        }
+        displayPanel->DisplayLedMap(netClient->GetSeg0(), netClient->GetSeg1());
     }
-    displayPanel->DisplayLedMap(netClient->GetSeg0(), netClient->GetSeg1());
 }
